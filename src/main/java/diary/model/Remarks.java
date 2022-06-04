@@ -10,10 +10,11 @@ import lombok.ToString;
 @ToString
 @EqualsAndHashCode
 public class Remarks {
-    private int id;
-    private int id_nauczyciela;
-    private int id_ucznia;
-    private String opis;
-    private String data;
-    private String nazwisko;
+    // TODO zmienić nazwy pól na angielskie
+    private final int id;
+    private final int id_nauczyciela;
+    private final int id_ucznia;
+    private final String opis;
+    private final String data;
+    private final String nazwisko;
 }

@@ -12,6 +12,6 @@ public class DiaryApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext run = SpringApplication.run(DiaryApplication.class, args);
         MainPrinter bean = run.getBean(MainPrinter.class);
-        bean.printWelcome();
+        bean.process();
     }
 }

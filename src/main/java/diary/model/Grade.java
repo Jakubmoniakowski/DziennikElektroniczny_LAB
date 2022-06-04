@@ -10,14 +10,15 @@ import lombok.ToString;
 @ToString
 @EqualsAndHashCode
 public class Grade {
-    private int id;
-    private int id_przedmiotu;
-    private String przedmiot;
-    private int id_ucznia;
-    private int ocena;
-    private String opis;
-    private String data;
-    private String imie;
-    private String nazwisko;
-    private int id_nauczyciela;
+    // TODO zmienić nazwy pól na angielskie
+    private final int id;
+    private final int id_przedmiotu;
+    private final String przedmiot;
+    private final int id_ucznia;
+    private final int ocena;
+    private final String opis;
+    private final String data;
+    private final String imie;
+    private final String nazwisko;
+    private final int id_nauczyciela;
 }
