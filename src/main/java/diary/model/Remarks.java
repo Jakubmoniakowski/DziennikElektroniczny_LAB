@@ -12,9 +12,9 @@ import lombok.ToString;
 public class Remarks {
     // TODO zmienić nazwy pól na angielskie
     private final int id;
-    private final int id_nauczyciela;
-    private final int id_ucznia;
-    private final String opis;
-    private final String data;
-    private final String nazwisko;
+    private final int id_teacher;
+    private final int id_student;
+    private final String description;
+    private final String date;
+    private final String surname;
 }

@@ -12,13 +12,13 @@ import lombok.ToString;
 public class Grade {
     // TODO zmienić nazwy pól na angielskie
     private final int id;
-    private final int id_przedmiotu;
-    private final String przedmiot;
-    private final int id_ucznia;
-    private final int ocena;
-    private final String opis;
-    private final String data;
-    private final String imie;
-    private final String nazwisko;
-    private final int id_nauczyciela;
+    private final int id_subject;
+    private final String subject;
+    private final int id_student;
+    private final int grade;
+    private final String description;
+    private final String date;
+    private final String name;
+    private final String surname;
+    private final int id_teacher;
 }
