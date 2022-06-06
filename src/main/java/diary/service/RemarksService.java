@@ -19,7 +19,7 @@ public class RemarksService {
                 .getRemarks()
                 .stream()
                 .filter(remark -> remark
-                        .getNazwisko()
+                        .getDescription()
                         .equals(studentSurname))
                 .collect(Collectors.toList());
     }

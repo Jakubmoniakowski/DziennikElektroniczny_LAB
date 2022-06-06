@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Add grade</title>
+</head>
+<body>
+<a href="/">Strona glowna</a>
+<form method="post" th:action="@{/grade}" th:object="${grade}">
+  <div>Wybierz studenta</div>
+  <div th:each="student:${students}">
+    <input type="radio" th:text = "${name}" th:field="*{id}" th:value="${surname}">
+  </div>
+
+  <label for="grade">Dodaj ocene: </label>
+  <input type = "number" th:field="*{grade}" th:max="6" th:min="1"/>
+  <button type="submit">Zapisz</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Add remarks</title>
+</head>
+<body>
+<a href="/">Strona glowna</a>
+<form method="post" th:action="@{/remarks}" th:object="${remarks}">
+  <div>Wybierz studenta</div>
+  <div th:each="student:${students}">
+    <input type="radio" th:text = "${name}" th:field="*{filmName}" th:value="${surname}">
+  </div>
+
+  <label for="remarks">Dodaj uwage: </label>
+  <input type = "text" th:field="*{remarks}"/>
+  <button type="submit">Zapisz</button>
+</form>
+</body>
+</html>
