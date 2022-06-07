@@ -19,7 +19,7 @@ public class GradeService {
                 .getGrades()
                 .stream()
                 .filter(grade -> grade
-                        .getNazwisko()
+                        .getSurname()
                         .equals(studentSurname))
                 .collect(Collectors.toList());
     }

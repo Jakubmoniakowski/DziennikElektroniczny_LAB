@@ -19,7 +19,7 @@ public class StudentService {
                 .getStudents()
                 .stream()
                 .filter(pesel -> pesel
-                        .getPesel()
+                        .getPeselNumber()
                         .equals(studentPesel))
                 .collect(Collectors.toList());
     }

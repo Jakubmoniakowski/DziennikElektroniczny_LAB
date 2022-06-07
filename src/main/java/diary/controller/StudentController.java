@@ -1,6 +1,5 @@
-package com.kul.films.controllers;
+package diary.controller;
 
-import com.kul.films.service.FilmsService;
 import diary.service.StudentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;

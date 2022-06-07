@@ -10,7 +10,6 @@ import lombok.ToString;
 @ToString
 @EqualsAndHashCode
 public class Student {
-    // TODO zmienić nazwy pól na angielskie
     private final int id;
     private final String name;
     private final String surname;
